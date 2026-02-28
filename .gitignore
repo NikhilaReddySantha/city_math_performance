@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Don't commit large raw data
+data/raw/
+
+# Ignore processed CSVs except the city-level file
+data/processed/*.csv
+!data/processed/city_level_math_performance.csv
+
+# Don't commit trained models
+models/*.pkl
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environments
+.env
+.venv/
+venv/
